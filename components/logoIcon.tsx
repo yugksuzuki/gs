@@ -16,7 +16,7 @@ export function LogoIcon() {
 
   return (
     <section className="flex justify-center items-center h-screen">
-      <div className="relative w-full max-w-[150px] md:max-w-[100px] lg:max-w-[250px]">
+      <div className="relative w-full max-w-[500px] md:max-w-[500px] lg:max-w-[500px]">
         <div
           ref={containerRef}
           className="absolute inset-0 flex items-center justify-center object-contain -mt-20 cursor-pointer"
@@ -28,8 +28,8 @@ export function LogoIcon() {
             src={logoIcon}
             alt="logoIcon"
             layout="responsive"
-            width={100}
-            height={20}
+            width={225}
+            height={40}
           />
         </div>
       </div>

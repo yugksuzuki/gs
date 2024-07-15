@@ -18,9 +18,9 @@ const HeroImage: React.FC<HeroImageProps> = ({ src, alt }) => {
   };
 
   return (
-    <div className="relative w-full h-full mb-4">
+    <div className="relative w-full h-full">
       <div
-        style={{ position: 'relative', width: '100%', height: '100%' }}
+        style={{ position: 'relative', width: '200%', height: '200%' }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         className="cursor-pointer"
@@ -29,9 +29,9 @@ const HeroImage: React.FC<HeroImageProps> = ({ src, alt }) => {
           src={src}
           alt={alt}
           layout="responsive"
-          objectFit="cover"
+          objectFit="contain"
           width={3000}
-          height={200}
+          height={900}
           className="hero-image"
         />
       </div>
@@ -41,9 +41,9 @@ const HeroImage: React.FC<HeroImageProps> = ({ src, alt }) => {
 
 export function Hero3(): JSX.Element {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="flex flex-col items-center w-full max-w-screen-lg">
-        <div className="flex flex-col items-center">
+    <div className="absolute flex items-center justify-center">
+      <div className="flex flex-col items-center w-full max-w-screen-xl ">
+        <div className="flex flex-col items-center -space-y-96 justify-center ml-56">
           <HeroImage src="/hero3.svg" alt="Hero 3" />
           <HeroImage src="/hero4.svg" alt="Hero 4" />
           <HeroImage src="/hero5.svg" alt="Hero 5" />
