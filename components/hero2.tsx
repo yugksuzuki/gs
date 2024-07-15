@@ -10,7 +10,7 @@ export function Hero2() {
             src={heromain}
             alt="heromain"
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
             quality={100}
           />
         </div>
