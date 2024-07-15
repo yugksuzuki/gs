@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export function Gradient() {
@@ -6,7 +5,7 @@ export function Gradient() {
     <div className="gradient-section min-h-screen flex justify-center items-center bg-gradient-to-b from-transparent to-white text-center text-black px-4 md:px-8 mt-8 md:mt-12">
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
-          <h3 className="text-3xl md:text-5xl font-bold">World's Most Powerful</h3>
+          <h3 className="text-3xl md:text-5xl font-bold">World&apos;s Most Powerful</h3>
           <h3 className="text-3xl md:text-5xl font-bold">Crypto Exchange</h3>
         </div>
         <div className="mb-8">
