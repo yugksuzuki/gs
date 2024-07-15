@@ -1,10 +1,7 @@
-'use client'
+'use client';
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import Image, { ImageProps } from 'next/image';
-import hero3 from '../public/hero3.svg';
-import hero4 from '../public/hero4.svg';
-import hero5 from '../public/hero5.svg';
 
 interface HeroImageProps {
   src: ImageProps['src'];
@@ -12,33 +9,22 @@ interface HeroImageProps {
 }
 
 const HeroImage: React.FC<HeroImageProps> = ({ src, alt }) => {
-  useEffect(() => {
-    const images = document.querySelectorAll('.hero-image');
+  const handleMouseEnter = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    gsap.to(event.currentTarget, { scale: 1.1, duration: 0.3 });
+  };
 
-    const handleMouseEnter = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-      gsap.to(event.currentTarget, { scale: 1.1, duration: 0.3 });
-    };
-
-    const handleMouseLeave = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-      gsap.to(event.currentTarget, { scale: 1, duration: 0.3 });
-    };
-
-    images.forEach((image) => {
-      image.addEventListener('mouseenter', handleMouseEnter);
-      image.addEventListener('mouseleave', handleMouseLeave);
-    });
-
-    return () => {
-      images.forEach((image) => {
-        image.removeEventListener('mouseenter', handleMouseEnter);
-        image.removeEventListener('mouseleave', handleMouseLeave);
-      });
-    };
-  }, []);
+  const handleMouseLeave = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    gsap.to(event.currentTarget, { scale: 1, duration: 0.3 });
+  };
 
   return (
     <div className="relative w-full h-full mb-4">
-      <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <div
+        style={{ position: 'relative', width: '100%', height: '100%' }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className="cursor-pointer"
+      >
         <Image
           src={src}
           alt={alt}
@@ -58,9 +44,9 @@ export function Hero3(): JSX.Element {
     <div className="flex items-center justify-center min-h-screen">
       <div className="flex flex-col items-center w-full max-w-screen-lg">
         <div className="flex flex-col items-center">
-          <HeroImage src={hero3} alt="Hero 3" />
-          <HeroImage src={hero4} alt="Hero 4" />
-          <HeroImage src={hero5} alt="Hero 5" />
+          <HeroImage src="/hero3.svg" alt="Hero 3" />
+          <HeroImage src="/hero4.svg" alt="Hero 4" />
+          <HeroImage src="/hero5.svg" alt="Hero 5" />
         </div>
       </div>
     </div>
