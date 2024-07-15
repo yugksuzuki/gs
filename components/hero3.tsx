@@ -15,11 +15,11 @@ const HeroImage: React.FC<HeroImageProps> = ({ src, alt }) => {
   useEffect(() => {
     const images = document.querySelectorAll('.hero-image');
 
-    const handleMouseEnter = (event: MouseEvent<HTMLDivElement>) => {
+    const handleMouseEnter = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       gsap.to(event.currentTarget, { scale: 1.1, duration: 0.3 });
     };
 
-    const handleMouseLeave = (event: MouseEvent<HTMLDivElement>) => {
+    const handleMouseLeave = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       gsap.to(event.currentTarget, { scale: 1, duration: 0.3 });
     };
 
