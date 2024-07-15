@@ -1,13 +1,13 @@
 'use client'
 import { useEffect } from 'react';
-import Image from 'next/image';
 import gsap from 'gsap';
+import Image, { ImageProps } from 'next/image';
 import hero3 from '../public/hero3.svg';
 import hero4 from '../public/hero4.svg';
 import hero5 from '../public/hero5.svg';
 
 interface HeroImageProps {
-  src: StaticImageData;
+  src: ImageProps['src'];
   alt: string;
 }
 
