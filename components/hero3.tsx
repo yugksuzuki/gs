@@ -16,11 +16,13 @@ const HeroImage: React.FC<HeroImageProps> = ({ src, alt }) => {
     const images = document.querySelectorAll('.hero-image');
 
     const handleMouseEnter = (event: MouseEvent) => {
-      gsap.to(event.currentTarget, { scale: 1.1, duration: 0.3 });
+      const target = event.currentTarget as HTMLDivElement;
+      gsap.to(target, { scale: 1.1, duration: 0.3 });
     };
 
     const handleMouseLeave = (event: MouseEvent) => {
-      gsap.to(event.currentTarget, { scale: 1, duration: 0.3 });
+      const target = event.currentTarget as HTMLDivElement;
+      gsap.to(target, { scale: 1, duration: 0.3 });
     };
 
     images.forEach((image) => {
