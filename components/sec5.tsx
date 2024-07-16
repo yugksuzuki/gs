@@ -3,7 +3,7 @@ import React from 'react';
 export function Gradient3() {
   return (
     <div 
-      className="absolute flex justify-center items-center text-center text-black mt-8 px-4 mb-0"
+      className="absolute flex flex-col justify-center items-center text-center text-black mt-8 px-4 mb-0"
       style={{ 
         position: 'absolute', 
         top: '60%', 
@@ -18,7 +18,7 @@ export function Gradient3() {
           <h3 className="text-3xl md:text-5xl font-bold">Digital Economy</h3>
         </div>
         <div className="mb-8">
-          <p className="text-xl md:text-3xl">Welcome to CryptoConnect: Your </p>
+          <p className="text-xl md:text-3xl">Welcome to CryptoConnect: Your</p>
           <p className="text-xl md:text-3xl">Journey into the Economy</p>
         </div>
         <div className="flex justify-center mb-20 mt-20">
@@ -30,8 +30,8 @@ export function Gradient3() {
           <div className="text-white font-semibold">Next</div>
         </div>
         <div className="flex justify-center items-center mb-12">
-          <p className="text-xl md:text-3xl">Don't have an account?</p>
-          <p className="text-xl md:text-3xl text-indigo-500 ml-1 "> Register</p>
+          <p className="text-xl md:text-3xl">Don&apos;t have an account?</p>
+          <p className="text-xl md:text-3xl text-indigo-500 ml-1">Register</p>
         </div>
       </div>
     </div>
