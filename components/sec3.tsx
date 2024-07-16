@@ -14,9 +14,9 @@ export function Gradient() {
           <p className="text-xl md:text-3xl">Dominance of Our Exchange</p>
         </div>
         <div className="flex justify-center mb-20 mt-20">
-          <div className="w-6 h-6 bg-indigo-500 rounded-full"></div>
-          <div className="w-4 h-4 bg-gray-200 rounded-full ml-2"></div>
-          <div className="w-4 h-4 bg-gray-200 rounded-full ml-2"></div>
+          <div className="w-5 h-5 bg-indigo-500  rounded-full"></div>
+          <div className="w-5 h-5 bg-gray-200 rounded-full ml-2"></div>
+          <div className=" mb-1  w-12 h-5 bg-gray-200 rounded-full ml-2"></div>
         </div>
         <div className="w-52 h-12 bg-indigo-500 rounded-full flex justify-center items-center cursor-pointer hover:bg-indigo-600 shadow-lg transition duration-300 ease-in-out mx-auto mb-12">
           <div className="text-white font-semibold">Next</div>

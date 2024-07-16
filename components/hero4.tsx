@@ -37,14 +37,12 @@ const HeroImage: React.FC<HeroImageProps> = ({ src, alt }) => {
   );
 };
 
-export function Hero3(): JSX.Element {
+export function Hero4(): JSX.Element {
   return (
     <div className="absolute inset-0 flex items-center justify-center mb-40 mt-0">
       <div className="flex flex-col items-center w-full max-w-screen-xl">
         <div className="flex flex-col items-center -space-y-56">
-          <HeroImage src="/hero3.svg" alt="Hero 3" />
-          <HeroImage src="/hero4.svg" alt="Hero 4" />
-          <HeroImage src="/hero5.svg" alt="Hero 5" />
+          <HeroImage src="/hero04.svg" alt="Hero 4" />
         </div>
       </div>
     </div>
